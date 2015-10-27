@@ -20,12 +20,12 @@ public abstract class RecyclerViewBaseAdapter<T, V extends View> extends Recycle
 
     @Override
     public ViewHolder<V> onCreateViewHolder(ViewGroup parent, int viewType) {
-        return null;
+        return new ViewHolder<>(onCreateItemView(parent, viewType));
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return mList.size();
     }
 
     protected abstract V onCreateItemView(ViewGroup parent, int viewType);
