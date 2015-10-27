@@ -52,4 +52,5 @@ public class RecyclerViewFragment extends Fragment {
         }
         mAdapter.notifyDataSetChanged();
     }
+
 }
