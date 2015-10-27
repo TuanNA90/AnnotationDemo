@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             fragmentTransaction.setCustomAnimations(
                     android.R.anim.slide_in_left, android.R.anim.slide_out_right,
                     android.R.anim.slide_in_left, android.R.anim.slide_out_right);
-            fragmentTransaction.add(R.id.flContainer, fragment, fragment.getClass().getSimpleName());
+            fragmentTransaction.replace(R.id.container, fragment);
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         }
