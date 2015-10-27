@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.tuanna.annotationdemo.R;
+import com.tuanna.annotationdemo.view.fragment.ListViewFragment_;
+import com.tuanna.annotationdemo.view.fragment.RecyclerViewFragment_;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Click;
@@ -24,9 +26,11 @@ public class MainActivity extends AppCompatActivity {
         switch (id){
             case R.id.tvListView:
                 /*TODO set event when button "show list_view" clicked*/
+                addFragment(ListViewFragment_.builder().build());
                 break;
             case R.id.tvRecyclerView:
                 /*TODO set event when button "show recycler_view" clicked*/
+                addFragment(RecyclerViewFragment_.builder().build());
                 break;
             default:
                 break;
