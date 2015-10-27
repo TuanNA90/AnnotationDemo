@@ -10,6 +10,7 @@ import android.widget.ListView;
 import com.tuanna.annotationdemo.R;
 import com.tuanna.annotationdemo.adapter.ListViewAdapter;
 import com.tuanna.annotationdemo.common.Shop;
+import com.tuanna.annotationdemo.view.activity.MainActivity;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Bean;
@@ -24,7 +25,7 @@ import java.util.List;
  * AnnotationDemo.
  * Created by tuanna on 27/10/2015.
  */
-@EFragment(R.layout.list_view_fragment)
+@EFragment(R.layout.fragment_list_view)
 public class ListViewFragment extends Fragment {
     @Bean
     ListViewAdapter mAdapter;
@@ -48,5 +49,11 @@ public class ListViewFragment extends Fragment {
 
     @ItemClick
     public void lvShopItemClicked(Shop shop) {
+        ((MainActivity) getActivity()).addFragment(DetailFragment_
+                        .builder()
+                        .title(shop.mTitle)
+                        .description(shop.mContent)
+                        .build()
+        );
     }
 }

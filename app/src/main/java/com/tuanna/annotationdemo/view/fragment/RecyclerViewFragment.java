@@ -25,6 +25,8 @@ import java.util.List;
  * AnnotationDemo.
  * Created by tuanna on 27/10/2015.
  */
+@EFragment(R.layout.fragment_recycler_view)
+public class RecyclerViewFragment extends Fragment{
 @EFragment(R.layout.recycler_view_fragment)
 public class RecyclerViewFragment extends Fragment {
     @Bean
