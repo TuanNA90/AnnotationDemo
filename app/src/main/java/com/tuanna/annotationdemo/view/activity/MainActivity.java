@@ -1,6 +1,8 @@
-package com.tuanna.annotationdemo;
+package com.tuanna.annotationdemo.view.activity;
 
 import android.support.v7.app.AppCompatActivity;
+
+import com.tuanna.annotationdemo.R;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
