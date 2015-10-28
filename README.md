@@ -6,7 +6,7 @@
 ```
 "
   apply plugin: 'android-apt'
-   def AAVersion = 'XXX' // XXX is version annotation
+   def AAVersion = '3.3.2' // XXX is version annotation
   
    apt {
      arguments {
